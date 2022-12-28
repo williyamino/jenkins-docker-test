@@ -29,11 +29,6 @@ pipeline {
         }
       }
     }
-    stage('Remove Unused docker image') {
-      steps{
-         sh "docker rmi $imagename:latest"
-      }
-    }
     stage('SSH transfer') {
         steps{
             sshPublisher(
