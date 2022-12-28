@@ -43,7 +43,7 @@ pipeline {
                         configName: "web-srv",
                         verbose: true,
                         transfers: [
-                            sshTransfer(execCommand:  "docker stop jenkins-demo-app || true && docker rm jenkins-demo-app || true && docker run -d --name jenkins-demo-app -p 81:80 vasylyshyn1984/test-jenkins-demo:latest"),
+                            sshTransfer(execCommand:  "docker stop jenkins-demo-app || true && docker rm jenkins-demo-app || true && docker pull vasylyshyn1984/test-jenkins-demo && docker run -d --name jenkins-demo-app -p 81:80 vasylyshyn1984/test-jenkins-demo"),
                         ]
                     )
                 ]
