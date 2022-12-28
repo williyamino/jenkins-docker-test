@@ -8,4 +8,4 @@ COPY src/index.php /var/www/html
 
 EXPOSE 80
 
-CMD ["apachectl", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
