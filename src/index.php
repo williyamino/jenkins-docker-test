@@ -2,7 +2,7 @@
     <head>
     </head>
       <body>
-        <h1>Jenkins Docker test image</h1>
+        <h1>Jenkins Docker test image with alpine</h1>
  <?php
         $ip_server = $_SERVER['SERVER_ADDR'];
   
